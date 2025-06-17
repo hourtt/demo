@@ -50,6 +50,7 @@ public class MemberController {
         return "members/memberList";
     }
 
+    //Another test
 // I've added this new Mapping route for testing
     @PostMapping("/form")
     public String create(Member form){
