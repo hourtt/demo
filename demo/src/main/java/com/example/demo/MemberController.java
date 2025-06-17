@@ -51,13 +51,13 @@ public class MemberController {
     }
 
 
-//    @PostMapping("/form")
-//    public String create(MemberForm form){
-//        Member member = new Member();
-//        member.setName(form.getName());
-//        memberService.join(member);
-//        return "memberAddForm";
-//    }
+    @PostMapping("/form")
+    public String create(Member form){
+        Member member = new Member();
+        member.setName(form.getName());
+        memberService.join(member);
+        return "memberAddForm";
+    }
 
 
 }
